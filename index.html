@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AJAX Project</title>
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+  <title>Brandon Moy</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/layout.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-  <header>
+  <header class="flex center wrap">
+    <h1 class="title-name col-full">
+      <span class="magic-text">
+        Brandon Moy
+      </span>
+    </h1>
+    <nav class="flex even col-quarter">
+      <a class="nav-link">Projects</a>
+      <a class="nav-link">About</a>
+      <a class="nav-link">Contact</a>
+    </nav>
+    <section class="nav-border col-full" />
   </header>
   <main>
+    <section>
+      <div class="track flex" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="/greet.webp" draggable="false" />
+        <img class="image" src="/shocked.webp" draggable="false" />
+        <img class="image" src="/sit.webp" draggable="false" />
+      </div>
+    </section>
   </main>
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/main.js"></script>
 </body>
+
 </html>
