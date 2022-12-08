@@ -1,5 +1,12 @@
 const track = document.querySelector('.track');
 
+window.onmousedown = event => handleOnDown(event);
+window.ontouchstart = event => handleOnDown(event.touches[0]);
+window.onmouseup = event => handleOnUp(event);
+window.ontouchend = event => handleOnUp(event.touches[0]);
+window.onmousemove = event => handleOnMove(event);
+window.ontouchmove = event => handleOnMove(event.touches[0]);
+
 const handleOnDown = event => {
   track.dataset.mouseDownAt = event.clientX;
 };
@@ -31,15 +38,3 @@ const handleOnMove = event => {
     }, { duration: 1200, fill: 'forwards' });
   }
 };
-
-window.onmousedown = event => handleOnDown(event);
-
-window.ontouchstart = event => handleOnDown(event.touches[0]);
-
-window.onmouseup = event => handleOnUp(event);
-
-window.ontouchend = event => handleOnUp(event.touches[0]);
-
-window.onmousemove = event => handleOnMove(event);
-
-window.ontouchmove = event => handleOnMove(event.touches[0]);
