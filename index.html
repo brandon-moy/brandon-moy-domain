@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
   <title>Brandon Moy</title>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/reset.css">
-  <link rel="stylesheet" href="/layout.css">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -19,22 +19,61 @@
       </span>
     </h1>
     <nav class="flex even col-quarter">
+      <a class="nav-link">Home</a>
       <a class="nav-link">Projects</a>
       <a class="nav-link">About</a>
-      <a class="nav-link">Contact</a>
     </nav>
     <section class="nav-border col-full" />
   </header>
   <main>
-    <section>
+    <section id="home">
+
+    </section>
+    <section class="hidden" id="projects">
       <div class="track flex" data-mouse-down-at="0" data-prev-percentage="0">
-        <img class="image" src="/greet.webp" draggable="false" />
-        <img class="image" src="/shocked.webp" draggable="false" />
-        <img class="image" src="/sit.webp" draggable="false" />
+        <img class="image" src="/images/carousel.gif" draggable="false" />
+        <img class="image" src="/images/pokedex2.png" draggable="false" />
+        <img class="image" src="/images/studybuddy2.png" draggable="false" />
       </div>
     </section>
+    <section class="flex center wrap hidden" id="about">
+      <img class="about-image" src="/images/about-me.jpg" />
+      <p class="about-text">
+        Hi I'm Brandon, a Software Developer based in Irvine, CA.
+      </p>
+      <p class="about-text">
+        I used to work in the Hospitality Industry, primarily hotels. I moved up
+        in leadership roles in different departments and managed to take away
+        many great skills such as communication, leadership, and time management.
+        After the loss of two important friends I took a step back to re-evaluate
+        my life path and goals.
+      </p>
+      <p class="about-text">
+        I have always had an interest in Software Development and coding, but I
+        didn't pursue it at the time because I believed I needed to follow
+        the track I was already on after having worked in the Hospitality Industry
+        for a few years. I reached out to a close friend from college who is a
+        Software Developer and he told me about his role and experience in
+        development which made me research more to see if I could still make the
+        career change. My friend put me in contact with some of his colleagues
+        who had gone through coding bootcamps at a later age and they talked me
+        through their bootcamp experience. After these conversation and research
+        I decided it was time to take the chance on myself and I enrolled in
+        LearningFuze's Full-Immersion Accelerated Web Development program.
+      </p>
+      <p class="about-text">
+        I learned a lot of great skills and technologies during the program such
+        as HTML5, CSS3, JavaScript, PostgreSQL, React.js (and more!) and since
+        my completion of the program I have been working on TypeScript, React Native,
+        and CSS challenges and problems.
+      </p>
+      <p class="about-text">
+        I've been loving the change I made for myself into Software Development
+        and I'd love to chat about
+      </p>
+    </section>
   </main>
-  <script src="/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

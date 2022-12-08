@@ -1,7 +1,7 @@
 const track = document.querySelector('.track');
 
-const handleOnDown = e => {
-  track.dataset.mouseDownAt = e.clientX;
+const handleOnDown = event => {
+  track.dataset.mouseDownAt = event.clientX;
 };
 
 const handleOnUp = () => {
@@ -9,10 +9,10 @@ const handleOnUp = () => {
   track.dataset.prevPercentage = track.dataset.percentage;
 };
 
-const handleOnMove = e => {
+const handleOnMove = event => {
   if (track.dataset.mouseDownAt === '0') return;
 
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - event.clientX;
   const maxDelta = window.innerWidth / 2;
 
   const percentage = (mouseDelta / maxDelta) * -100;
@@ -32,14 +32,14 @@ const handleOnMove = e => {
   }
 };
 
-window.onmousedown = e => handleOnDown(e);
+window.onmousedown = event => handleOnDown(event);
 
-window.ontouchstart = e => handleOnDown(e.touches[0]);
+window.ontouchstart = event => handleOnDown(event.touches[0]);
 
-window.onmouseup = e => handleOnUp(e);
+window.onmouseup = event => handleOnUp(event);
 
-window.ontouchend = e => handleOnUp(e.touches[0]);
+window.ontouchend = event => handleOnUp(event.touches[0]);
 
-window.onmousemove = e => handleOnMove(e);
+window.onmousemove = event => handleOnMove(event);
 
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+window.ontouchmove = event => handleOnMove(event.touches[0]);
