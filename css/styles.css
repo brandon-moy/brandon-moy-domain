@@ -33,8 +33,9 @@ html {
 .body {
   background-color: rgb(15, 15, 15);
   width: 100%;
-  height: 100vh;
 }
+
+/* Navbar animation to x and bars */
 
 .navbar-toggler {
   width: 25px;
@@ -148,6 +149,17 @@ html {
   white-space: nowrap;
 }
 
+.track-container {
+  margin: 0;
+  position: relative;
+  height: 50vh;
+  border: thick double;
+}
+
+.text-container {
+  border: thick double;
+}
+
 .track {
   gap: 4vmin;
   position: absolute;
@@ -166,14 +178,11 @@ html {
 }
 
 .about-image {
-  width: 50%;
-  margin-top: 1rem;
   border-radius: 50%;
 }
 
 .about-text {
   color: white;
-  flex-basis: 90%;
 }
 
 @media (hover: hover) {
