@@ -30,9 +30,8 @@ html {
   display: none !important;
 }
 
-.body {
+main {
   background-color: rgb(15, 15, 15);
-  width: 100%;
 }
 
 /* Navbar animation to x and bars */
@@ -167,6 +166,12 @@ html {
   white-space: nowrap;
 }
 
+/* Home Section */
+
+
+
+/* Projects Section */
+
 .track-container {
   margin: 0;
   position: relative;
@@ -215,4 +220,46 @@ html {
   .track:active {
     cursor: grabbing;
   }
+}
+
+0% {
+  opacity: 0;
+}
+
+1% {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+4% {
+  opacity: 0;
+}
+
+5% {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+17% {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+19% {
+  opacity: 0;
+}
+
+20% {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+80% {
+  opacity: 0;
+}
+
+100% {
+  opacity: 0;
 }
