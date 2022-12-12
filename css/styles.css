@@ -38,7 +38,7 @@ html {
 /* Navbar animation to x and bars */
 
 .close-navbar-toggler {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
