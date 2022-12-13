@@ -170,8 +170,8 @@ main {
 
 #home {
   background: rgb(25, 25, 25);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 100%;
+  height: 100vh;
 }
 
 .home-title {
