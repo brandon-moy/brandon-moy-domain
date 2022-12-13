@@ -226,11 +226,6 @@ main {
   margin: 0;
   position: relative;
   height: 50vh;
-  border: thick double;
-}
-
-.text-container {
-  border: thick double;
 }
 
 .track {
