@@ -26,12 +26,23 @@ html {
   overflow-x: hidden;
 }
 
+main {
+  background-color: rgb(15, 15, 15);
+}
+
 .hidden {
   display: none !important;
 }
 
-main {
-  background-color: rgb(15, 15, 15);
+.section-header {
+  color: white;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.about-text-container {
+  padding-left: 1rem;
 }
 
 /* Navbar animation to x and bars */
@@ -217,11 +228,6 @@ main {
   margin: 0;
   position: relative;
   height: 50vh;
-  border: thick double;
-}
-
-.text-container {
-  border: thick double;
 }
 
 .track {
