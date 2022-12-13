@@ -1,3 +1,3 @@
-# ajax-project
+# brandon-moy-domain
 
-A dynamic HTML, CSS, and JavaScript solo project.
+A repository to use as the host for my personal domain.
