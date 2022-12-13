@@ -7,7 +7,6 @@
   <title>Brandon Moy</title>
   <link rel="icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/layout.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -17,7 +16,7 @@
   <a class="close-navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarNav"
     aria-controls="navbarNav" aria-label="Toggle navigation">
   </a>
-  <nav class="navbar navbar-dark bg-dark sticky-top navbar-expand-lg">
+  <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
     <div class="container-fluid">
       <a href="#" class="navbar-brand mb-0 h1">
         <img class="about-image" alt="Logo" width="24" height="24" src="/images/about-me.jpg" />
@@ -51,16 +50,18 @@
     </div>
   </nav>
   <main>
-    <section id="home">
-      <h1 class="home-title">Brandon Moy</h1>
-      <div class="changing-text">
-        <span class="change">Software Developer</span>
+    <section class="d-flex flex-wrap justify-content-center align-content-center" id="home">
+      <h1 class="home-title col-12">Brandon Moy</h1>
+      <div class="container-cycle col-12">
+        <span class="change">Software Engineer</span>
+        <span class="change">CSS Artist</span>
         <span class="change">Programmer</span>
+        <span class="change">Web Developer</span>
       </div>
     </section>
     <section class="row" id="projects">
       <div class="track-container col-12">
-        <div class="track flex" data-mouse-down-at="0" data-prev-percentage="0">
+        <div class="track d-flex" data-mouse-down-at="0" data-prev-percentage="0">
           <img class="image" src="/images/carousel.gif" draggable="false" />
           <img class="image" src="/images/pokedex2.png" draggable="false" />
           <img class="image" src="/images/studybuddy2.png" draggable="false" />
@@ -100,6 +101,10 @@
           as HTML5, CSS3, JavaScript, PostgreSQL, React.js (and more!) and since
           my completion of the program I have been working on TypeScript, React Native,
           and CSS challenges and problems.
+        </p>
+        <p class="about-text">
+          I enjoy finding neat CSS tricks or animation and trying to rebuilt them
+          myself!
         </p>
         <p class="about-text">
           I've been loving the change I made for myself into Software Development
