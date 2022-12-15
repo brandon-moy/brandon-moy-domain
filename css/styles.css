@@ -267,6 +267,13 @@ main {
   text-align: center;
 }
 
+/* Contact Me Section */
+
+.link-icons > i {
+  color: white;
+  font-size: 4rem;
+}
+
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
