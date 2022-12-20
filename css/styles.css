@@ -269,6 +269,24 @@ main {
 
 /* Contact Me Section */
 
+.contact-header {
+  color: white;
+}
+
+.contact-location {
+  color: white;
+  text-align: center;
+}
+
+.email-link {
+  text-align: center;
+}
+
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
 .link-icons > i {
   color: white;
   font-size: 4rem;
