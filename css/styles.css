@@ -28,6 +28,7 @@ html {
 
 main {
   background-color: rgb(15, 15, 15);
+  padding-bottom: 2rem;
 }
 
 .hidden {
@@ -39,6 +40,7 @@ main {
   padding-left: 1rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid white;
+  margin-bottom: 2rem;
 }
 
 .about-text-container {
@@ -265,6 +267,12 @@ main {
 .skill-name {
   color: white;
   text-align: center;
+}
+
+/* Contact Me Section */
+
+.link-icons > i {
+  font-size: 2rem;
 }
 
 @media (hover: hover) {
