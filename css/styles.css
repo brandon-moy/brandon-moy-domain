@@ -22,31 +22,6 @@
   }
 }
 
-html {
-  overflow-x: hidden;
-}
-
-main {
-  background-color: rgb(15, 15, 15);
-  padding-bottom: 2rem;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.section-header {
-  color: white;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid white;
-  margin-bottom: 2rem;
-}
-
-.about-text-container {
-  padding-left: 1rem;
-}
-
 /* Navbar animation to x and bars */
 
 .close-navbar-toggler {
@@ -82,11 +57,6 @@ main {
   border: 0;
 }
 
-.navbar-toggler span {
-  margin: 0;
-  padding: 0;
-}
-
 .toggler-icon {
   display: block;
   position: absolute;
@@ -100,10 +70,6 @@ main {
   left: 0;
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
-}
-
-.middle-bar {
-  margin-top: 0;
 }
 
 .navbar-toggler .top-bar {
@@ -150,60 +116,13 @@ main {
   width: 100%;
   height: 1px;
   animation: background-pan 3s linear infinite;
-  background:
-    linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
+  background: var(--gradient);
   background-size: 200%;
-}
-
-.magic-text {
-  animation: background-pan 3s linear infinite;
-  background:
-    linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
-  background-size: 200%;
-  /* stylelint-disable */
-  -webkit-background-clip: text;
-  /* styline-enable */
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
 }
 
 /* Home Section */
 
-#home {
-  background: rgb(25, 25, 25);
-  width: 100%;
-  height: 100vh;
-}
-
-.home-title {
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-}
-
-.container-cycle {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  color: white;
-  font-size: 1.5rem;
-  width: 100%;
-  height: 37px;
-}
-
-.container-cycle span {
+#cycle span {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -212,23 +131,21 @@ main {
   animation: cycle-titles 20s linear infinite;
 }
 
-.container-cycle span:nth-child(2) {
+#cycle span:nth-child(2) {
   animation-delay: 5s;
 }
 
-.container-cycle span:nth-child(3) {
+#cycle span:nth-child(3) {
   animation-delay: 10s;
 }
 
-.container-cycle span:nth-child(4) {
+#cycle span:nth-child(4) {
   animation-delay: 15s;
 }
 
 /* Projects Section */
 
-.track-container {
-  margin: 0;
-  position: relative;
+.vh-50 {
   height: 50vh;
 }
 
@@ -247,32 +164,6 @@ main {
   object-fit: cover;
   object-position: 100% center;
   border-radius: 0.25rem;
-}
-
-.about-image {
-  border-radius: 50%;
-}
-
-.about-text {
-  color: white;
-}
-
-/* Skills & Tools Section */
-
-.badge {
-  width: 60%;
-  fill: white;
-}
-
-.skill-name {
-  color: white;
-  text-align: center;
-}
-
-/* Contact Me Section */
-
-.link-icons > i {
-  font-size: 2rem;
 }
 
 @media (hover: hover) {
@@ -304,12 +195,12 @@ main {
 
   5% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   17% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   19% {
