@@ -22,15 +22,6 @@
   }
 }
 
-.section-header {
-  color: white;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid white;
-  margin-bottom: 2rem;
-}
-
 /* Navbar animation to x and bars */
 
 .close-navbar-toggler {
