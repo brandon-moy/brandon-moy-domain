@@ -22,10 +22,6 @@
   }
 }
 
-html {
-  overflow-x: hidden;
-}
-
 main {
   background-color: rgb(15, 15, 15);
   padding-bottom: 2rem;
@@ -37,14 +33,11 @@ main {
 
 .section-header {
   color: white;
+  padding-top: 2rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid white;
   margin-bottom: 2rem;
-}
-
-.about-text-container {
-  padding-left: 1rem;
 }
 
 /* Navbar animation to x and bars */
