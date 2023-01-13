@@ -66,11 +66,6 @@
   border: 0;
 }
 
-.navbar-toggler span {
-  margin: 0;
-  padding: 0;
-}
-
 .toggler-icon {
   display: block;
   position: absolute;
@@ -84,10 +79,6 @@
   left: 0;
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
-}
-
-.middle-bar {
-  margin-top: 0;
 }
 
 .navbar-toggler .top-bar {
@@ -134,14 +125,7 @@
   width: 100%;
   height: 1px;
   animation: background-pan 3s linear infinite;
-  background:
-    linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
+  background: var(--gradient);
   background-size: 200%;
 }
 
