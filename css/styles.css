@@ -191,12 +191,6 @@
   border-radius: 0.25rem;
 }
 
-/* Contact Me Section */
-
-.link-icons > i {
-  font-size: 2rem;
-}
-
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
