@@ -22,15 +22,6 @@
   }
 }
 
-main {
-  background-color: rgb(15, 15, 15);
-  padding-bottom: 2rem;
-}
-
-.hidden {
-  display: none !important;
-}
-
 .section-header {
   color: white;
   padding-top: 2rem;
@@ -154,24 +145,6 @@ main {
   background-size: 200%;
 }
 
-.magic-text {
-  animation: background-pan 3s linear infinite;
-  background:
-    linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
-  background-size: 200%;
-  /* stylelint-disable */
-  -webkit-background-clip: text;
-  /* styline-enable */
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
-
 /* Home Section */
 
 #cycle span {
@@ -275,12 +248,12 @@ main {
 
   5% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   17% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   19% {
