@@ -1,0 +1,23 @@
+.w-5 {
+  width: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  .w-5 {
+    width: 7.5%;
+  }
+
+  #projects .d-flex:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .w-5 {
+    width: 5%;
+  }
+
+  .cover {
+    height: 48vh;
+  }
+}
