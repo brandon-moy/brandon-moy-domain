@@ -2,6 +2,18 @@
   width: 10%;
 }
 
+.w-20 {
+  width: 20%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.bottom-neg10 {
+  bottom: -10%;
+}
+
 @media only screen and (min-width: 768px) {
   .w-5 {
     width: 7.5%;

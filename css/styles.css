@@ -12,17 +12,9 @@
     );
 }
 
-@keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-
-  to {
-    background-position: -200% center;
-  }
+html {
+  overflow-x: hidden;
 }
-
-/* Navbar animation to x and bars */
 
 .close-navbar-toggler {
   position: fixed;
@@ -120,8 +112,6 @@
   background-size: 200%;
 }
 
-/* Home Section */
-
 #cycle span {
   position: absolute;
   width: 100%;
@@ -143,20 +133,9 @@
   animation-delay: 15s;
 }
 
-.cover {
-  z-index: 2;
-  height: 26.5vh;
-  transition: opacity 1s linear;
-}
-
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
-  }
-
-  .cover:hover {
-    opacity: 0;
-    transition: opacity 1s linear;
   }
 }
 
@@ -197,5 +176,15 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
   }
 }
