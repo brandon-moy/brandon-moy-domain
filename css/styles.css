@@ -135,6 +135,22 @@ html {
   transform: skewY(-18deg);
 }
 
+.snow-2 {
+  bottom: -98px;
+  left: -42.5px;
+  border-right: 42.5px solid transparent;
+  border-bottom: 100px solid #ddd;
+  border-left: 42.5px solid transparent;
+}
+
+.snow-shadow-2 {
+  bottom: -87.5px;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid #ccc;
+  transform-origin: top right;
+  transform: skewY(-18deg);
+}
+
 .close-navbar-toggler {
   position: fixed;
   top: 0;
