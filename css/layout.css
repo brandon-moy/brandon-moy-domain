@@ -18,6 +18,10 @@
   bottom: -10%;
 }
 
+.z-3 {
+  z-index: 3;
+}
+
 @media only screen and (min-width: 768px) {
   .w-5 {
     width: 7.5%;
