@@ -23,27 +23,14 @@ html {
 .mountain {
   left: 120px;
   border-right: 180px solid transparent;
-
-  /* right slope of mountain */
   border-bottom: 350px solid #5ad07d;
-
-  /* height of mountain */
   border-left: 180px solid transparent;
-
-  /* left slope of mountain */
 }
 
 .mountain-shadow {
   left: 300px;
   border-right: 140px solid transparent;
-
-  /* right slope of mountain shadow */
   border-bottom: 350px solid #357639;
-
-  /* height of mountain shadow */
-  border-left: 0 solid transparent;
-
-  /* left slope of mountain shadow */
   transform-origin: top right;
   transform: skewX(18deg);
 }
@@ -52,38 +39,22 @@ html {
   bottom: -98px;
   left: -50px;
   border-right: 50px solid transparent;
-
-  /* right slope of snow peak */
   border-bottom: 100px solid #ddd;
-
-  /* height of snow peak */
   border-left: 50px solid transparent;
-
-  /* left slope of snow peak */
 }
 
 .snow-shadow {
   bottom: -87px;
   border-right: 35px solid transparent;
-
-  /* right slope of snow shadow */
   border-bottom: 100px solid #ccc;
-
-  /* height of snow shadow */
-  border-left: 0 solid transparent;
-
-  /* left slope of snow shadow */
   transform-origin: top right;
   transform: skewY(-18deg);
 }
 
 .snow-jagged {
-  /* Our inverted jagged bit of snow */
   bottom: -130px;
   left: -45px;
   border-top: 40px solid #ddd;
-
-  /* because the peak is inverted, the top has a border */
   border-right: 25px solid transparent;
   border-left: 25px solid transparent;
 }
@@ -91,28 +62,14 @@ html {
 .mountain-1 {
   left: 60px;
   border-right: 130px solid transparent;
-
-  /* right slope of mountain 1 */
   border-bottom: 150px solid #68f193;
-
-  /* height of mountain 1 */
   border-left: 130px solid transparent;
-
-  /* left slope of mountain 1 */
 }
 
 .mountain-shadow-1 {
   left: 190px;
-  border-top: 0 solid transparent;
   border-right: 100px solid transparent;
-
-  /* right slope of mountain shadow 1 */
   border-bottom: 150px solid #40945c;
-
-  /* height of mountain shadow 1 */
-  border-left: 0 solid transparent;
-
-  /* left slope of mountain shadow 1 */
   transform-origin: top right;
   transform: skewX(18deg);
 }
