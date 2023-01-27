@@ -10,15 +10,16 @@
       var(--pink),
       var(--purple)
     );
-  --main: #212529;
-  --text: #70c4c6;
-  --button: #fff;
+  --main: #1f303a;
+  --text: #fff;
+  --button: #70c4c6;
   --b-text: #000;
   --sky: #354a4a;
   --mountain: #4f7b91;
   --mountain-shadow: #304a58;
   --snow: #ccc;
   --snow-shadow: #bbb;
+  --light: #fff;
 }
 
 html {
@@ -32,9 +33,7 @@ nav {
 
 .bg-main {
   transition: background-color 4s ease-in-out;
-  transition: color 2s ease-in-out;
   background-color: var(--main);
-  color: var(--text);
 }
 
 .text-var {
@@ -57,36 +56,41 @@ nav {
   color: var(--b-text);
 }
 
+.border-header,
+.mountain,
+.mountain-1,
+.mountain-2,
+.mountain-3,
+.mountain-4,
+.mountain-shadow,
+.mountain-shadow-1,
+.mountain-shadow-2,
+.mountain-shadow-3,
+.mountain-shadow-4,
+.snow,
+.snow-1,
+.snow-2,
+.snow-3,
+.snow-shadow,
+.snow-shadow-1,
+.snow-shadow-2,
+.snow-shadow-3 {
+  transition: border-bottom 4s ease-in-out;
+}
+
 .border-header {
-  transition: border 2s ease-in-out;
-  border-bottom: var(--text);
+  border-bottom: 2px solid var(--text);
 }
 
-.eclipse {
-  width: 75%;
-  height: 25vh;
-  bottom: -20%;
-  left: 10%;
-}
-
-.sun {
+.sun-moon {
+  transition: background-color 4s ease-in-out;
   width: 70px;
   height: 70px;
-  background-color: #ffa;
-  top: -35px;
-  left: -35px;
-}
-
-.moon {
-  top: -35px;
-  right: -35px;
-  width: 70px;
-  height: 70px;
-  background-color: #fff;
+  background-color: var(--light);
+  transform: translateX(60%) translateY(100%);
 }
 
 .mountain {
-  transition: border-color 2s ease-in-out;
   left: 120px;
   border-right: 180px solid transparent;
   border-bottom: 350px solid var(--mountain);
@@ -94,7 +98,6 @@ nav {
 }
 
 .mountain-shadow {
-  transition: border-color 2s ease-in-out;
   left: 300px;
   border-right: 140px solid transparent;
   border-bottom: 350px solid var(--mountain-shadow);
@@ -103,7 +106,6 @@ nav {
 }
 
 .mountain-1 {
-  transition: border-color 2s ease-in-out;
   left: 60px;
   border-right: 130px solid transparent;
   border-bottom: 150px solid var(--mountain);
@@ -111,7 +113,6 @@ nav {
 }
 
 .mountain-shadow-1 {
-  transition: border-color 2s ease-in-out;
   left: 190px;
   border-right: 100px solid transparent;
   border-bottom: 150px solid var(--mountain-shadow);
@@ -120,7 +121,6 @@ nav {
 }
 
 .mountain-2 {
-  transition: border-color 2s ease-in-out;
   left: 360px;
   border-right: 130px solid transparent;
   border-bottom: 300px solid var(--mountain);
@@ -128,7 +128,6 @@ nav {
 }
 
 .mountain-shadow-2 {
-  transition: border-color 2s ease-in-out;
   left: 490px;
   border-right: 100px solid transparent;
   border-bottom: 300px solid var(--mountain-shadow);
@@ -137,7 +136,6 @@ nav {
 }
 
 .mountain-3 {
-  transition: border-color 2s ease-in-out;
   left: 600px;
   border-right: 180px solid transparent;
   border-bottom: 150px solid var(--mountain);
@@ -145,7 +143,6 @@ nav {
 }
 
 .mountain-shadow-3 {
-  transition: border-color 2s ease-in-out;
   left: 780px;
   border-right: 135px solid transparent;
   border-bottom: 150px solid var(--mountain-shadow);
@@ -154,7 +151,6 @@ nav {
 }
 
 .mountain-4 {
-  transition: border-color 2s ease-in-out;
   left: 920px;
   border-right: 180px solid transparent;
   border-bottom: 350px solid var(--mountain);
@@ -162,7 +158,6 @@ nav {
 }
 
 .mountain-shadow-4 {
-  transition: border-color 2s ease-in-out;
   left: 1100px;
   border-right: 140px solid transparent;
   border-bottom: 350px solid var(--mountain-shadow);
@@ -171,7 +166,6 @@ nav {
 }
 
 .snow {
-  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -50px;
   border-right: 50px solid transparent;
@@ -180,7 +174,6 @@ nav {
 }
 
 .snow-shadow {
-  transition: border-color 2s ease-in-out;
   bottom: -87px;
   border-right: 35px solid transparent;
   border-bottom: 100px solid var(--snow-shadow);
@@ -189,7 +182,7 @@ nav {
 }
 
 .snow-jagged {
-  transition: border-color 2s ease-in-out;
+  transition: border-top 4s ease-in-out;
   bottom: -130px;
   left: -45px;
   border-top: 40px solid var(--snow);
@@ -198,7 +191,6 @@ nav {
 }
 
 .snow-1 {
-  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -85px;
   border-right: 85px solid transparent;
@@ -207,7 +199,6 @@ nav {
 }
 
 .snow-shadow-1 {
-  transition: border-color 2s ease-in-out;
   bottom: -80px;
   border-right: 55px solid transparent;
   border-bottom: 100px solid var(--snow-shadow);
@@ -216,7 +207,6 @@ nav {
 }
 
 .snow-2 {
-  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -42.5px;
   border-right: 42.5px solid transparent;
@@ -225,7 +215,6 @@ nav {
 }
 
 .snow-shadow-2 {
-  transition: border-color 2s ease-in-out;
   bottom: -87.5px;
   border-right: 30px solid transparent;
   border-bottom: 100px solid var(--snow-shadow);
@@ -234,7 +223,6 @@ nav {
 }
 
 .snow-3 {
-  transition: border-color 2s ease-in-out;
   bottom: -80px;
   left: -96px;
   border-right: 95px solid transparent;
@@ -243,7 +231,6 @@ nav {
 }
 
 .snow-shadow-3 {
-  transition: border-color 2s ease-in-out;
   bottom: -62.5px;
   border-right: 55px solid transparent;
   border-bottom: 80px solid var(--snow-shadow);
@@ -370,6 +357,10 @@ nav {
 
 @media (hover: hover) {
   a:hover {
+    cursor: pointer;
+  }
+
+  .sun-moon:hover {
     cursor: pointer;
   }
 }
