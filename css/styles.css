@@ -10,10 +10,31 @@
       var(--pink),
       var(--purple)
     );
+  --main: #212529;
+  --text: #fff;
+  --button: #fff;
+  --b-text: #000;
 }
 
 html {
   overflow-x: hidden;
+}
+
+.bg-main {
+  background: var(--main);
+  color: var(--text);
+}
+
+.text-var {
+  color: var(--text);
+}
+
+.bg-button {
+  color: var(--button);
+}
+
+.text-button {
+  color: var(--b-text);
 }
 
 .background-container {
