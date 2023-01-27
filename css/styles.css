@@ -26,18 +26,13 @@ html {
   overflow-x: hidden;
 }
 
-nav {
-  transition: background-color 2s linear;
-  transition: color 2s linear;
-}
-
 .bg-main {
   transition: background-color 4s ease-in-out;
   background-color: var(--main);
 }
 
 .text-var {
-  transition: color 2s ease-in-out;
+  transition: color 4s ease-in-out;
   color: var(--text);
 }
 
@@ -47,16 +42,17 @@ nav {
 }
 
 .bg-button {
-  transition: background 2s ease-in-out;
+  transition: background 4s ease-in-out;
   background: var(--button);
 }
 
 .text-button {
-  transition: color 2s ease-in-out;
+  transition: color 4s ease-in-out;
   color: var(--b-text);
 }
 
 .border-header,
+.border-text,
 .mountain,
 .mountain-1,
 .mountain-2,
@@ -80,6 +76,10 @@ nav {
 
 .border-header {
   border-bottom: 2px solid var(--text);
+}
+
+.border-text {
+  border: 2px solid var(--text);
 }
 
 .sun-moon {

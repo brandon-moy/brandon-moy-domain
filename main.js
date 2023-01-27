@@ -1,8 +1,10 @@
 const $nav = document.querySelector('nav');
 const $sunMoon = document.querySelector('.sun-moon');
 
+$sunMoon.addEventListener('click', modeChange);
+
 let day = true;
-// eslint-disable-next-line
+
 function modeChange() {
   if (day) {
     toggleNav();
@@ -39,5 +41,3 @@ function toggleNav() {
   $nav.classList.toggle('bg-dark');
   $nav.classList.toggle('bg-light');
 }
-
-$sunMoon.addEventListener('click', modeChange);
