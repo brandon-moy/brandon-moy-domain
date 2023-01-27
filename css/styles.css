@@ -14,6 +14,7 @@
   --text: #fff;
   --button: #fff;
   --b-text: #000;
+  --sky: #70c4c6;
 }
 
 html {
@@ -29,19 +30,16 @@ html {
   color: var(--text);
 }
 
+.bg-sky {
+  background: var(--sky);
+}
+
 .bg-button {
   color: var(--button);
 }
 
 .text-button {
   color: var(--b-text);
-}
-
-.background-container {
-  background: #70c4c6;
-  animation: daylight 120s infinite linear;
-  animation-delay: 30s;
-  overflow: hidden;
 }
 
 .eclipse {
