@@ -86,6 +86,7 @@ nav {
 }
 
 .mountain {
+  transition: border-color 2s ease-in-out;
   left: 120px;
   border-right: 180px solid transparent;
   border-bottom: 350px solid var(--mountain);
@@ -93,6 +94,7 @@ nav {
 }
 
 .mountain-shadow {
+  transition: border-color 2s ease-in-out;
   left: 300px;
   border-right: 140px solid transparent;
   border-bottom: 350px solid var(--mountain-shadow);
@@ -101,66 +103,75 @@ nav {
 }
 
 .mountain-1 {
+  transition: border-color 2s ease-in-out;
   left: 60px;
   border-right: 130px solid transparent;
-  border-bottom: 150px solid #7ac1e4;
+  border-bottom: 150px solid var(--mountain);
   border-left: 130px solid transparent;
 }
 
 .mountain-shadow-1 {
+  transition: border-color 2s ease-in-out;
   left: 190px;
   border-right: 100px solid transparent;
-  border-bottom: 150px solid #5b95b3;
+  border-bottom: 150px solid var(--mountain-shadow);
   transform-origin: top right;
   transform: skewX(18deg);
 }
 
 .mountain-2 {
+  transition: border-color 2s ease-in-out;
   left: 360px;
   border-right: 130px solid transparent;
-  border-bottom: 300px solid #7ac1e4;
+  border-bottom: 300px solid var(--mountain);
   border-left: 130px solid transparent;
 }
 
 .mountain-shadow-2 {
+  transition: border-color 2s ease-in-out;
   left: 490px;
   border-right: 100px solid transparent;
-  border-bottom: 300px solid #5b95b3;
+  border-bottom: 300px solid var(--mountain-shadow);
   transform-origin: top right;
   transform: skewX(18deg);
 }
 
 .mountain-3 {
+  transition: border-color 2s ease-in-out;
   left: 600px;
   border-right: 180px solid transparent;
-  border-bottom: 150px solid #7ac1e4;
+  border-bottom: 150px solid var(--mountain);
   border-left: 180px solid transparent;
 }
 
 .mountain-shadow-3 {
+  transition: border-color 2s ease-in-out;
   left: 780px;
   border-right: 135px solid transparent;
-  border-bottom: 150px solid #5b95b3;
+  border-bottom: 150px solid var(--mountain-shadow);
   transform-origin: top right;
   transform: skewX(18deg);
 }
 
 .mountain-4 {
+  transition: border-color 2s ease-in-out;
   left: 920px;
   border-right: 180px solid transparent;
-  border-bottom: 350px solid #7ac1e4;
+  border-bottom: 350px solid var(--mountain);
   border-left: 180px solid transparent;
 }
 
 .mountain-shadow-4 {
+  transition: border-color 2s ease-in-out;
   left: 1100px;
   border-right: 140px solid transparent;
-  border-bottom: 350px solid #4f7b91;
+  border-bottom: 350px solid var(--mountain-shadow);
   transform-origin: top right;
   transform: skewX(18deg);
 }
 
 .snow {
+  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -50px;
   border-right: 50px solid transparent;
@@ -169,6 +180,7 @@ nav {
 }
 
 .snow-shadow {
+  transition: border-color 2s ease-in-out;
   bottom: -87px;
   border-right: 35px solid transparent;
   border-bottom: 100px solid var(--snow-shadow);
@@ -177,6 +189,7 @@ nav {
 }
 
 .snow-jagged {
+  transition: border-color 2s ease-in-out;
   bottom: -130px;
   left: -45px;
   border-top: 40px solid var(--snow);
@@ -185,49 +198,55 @@ nav {
 }
 
 .snow-1 {
+  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -85px;
   border-right: 85px solid transparent;
-  border-bottom: 100px solid #ddd;
+  border-bottom: 100px solid var(--snow);
   border-left: 85px solid transparent;
 }
 
 .snow-shadow-1 {
+  transition: border-color 2s ease-in-out;
   bottom: -80px;
   border-right: 55px solid transparent;
-  border-bottom: 100px solid #ccc;
+  border-bottom: 100px solid var(--snow-shadow);
   transform-origin: top right;
   transform: skewY(-18deg);
 }
 
 .snow-2 {
+  transition: border-color 2s ease-in-out;
   bottom: -98px;
   left: -42.5px;
   border-right: 42.5px solid transparent;
-  border-bottom: 100px solid #ddd;
+  border-bottom: 100px solid var(--snow);
   border-left: 42.5px solid transparent;
 }
 
 .snow-shadow-2 {
+  transition: border-color 2s ease-in-out;
   bottom: -87.5px;
   border-right: 30px solid transparent;
-  border-bottom: 100px solid #ccc;
+  border-bottom: 100px solid var(--snow-shadow);
   transform-origin: top right;
   transform: skewY(-18deg);
 }
 
 .snow-3 {
+  transition: border-color 2s ease-in-out;
   bottom: -80px;
   left: -96px;
   border-right: 95px solid transparent;
-  border-bottom: 80px solid #ddd;
+  border-bottom: 80px solid var(--snow);
   border-left: 95px solid transparent;
 }
 
 .snow-shadow-3 {
+  transition: border-color 2s ease-in-out;
   bottom: -62.5px;
   border-right: 55px solid transparent;
-  border-bottom: 80px solid #ccc;
+  border-bottom: 80px solid var(--snow-shadow);
   transform-origin: top right;
   transform: skewY(-18deg);
 }
