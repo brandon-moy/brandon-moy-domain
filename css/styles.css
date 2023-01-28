@@ -12,8 +12,6 @@
     );
   --main: #1f303a;
   --text: #fff;
-  --button: #70c4c6;
-  --b-text: #000;
   --sky: #354a4a;
   --mountain: #4f7b91;
   --mountain-shadow: #304a58;
@@ -43,12 +41,9 @@ html {
 
 .bg-button {
   transition: background 4s ease-in-out;
-  background: var(--button);
-}
-
-.text-button {
-  transition: color 4s ease-in-out;
-  color: var(--b-text);
+  background: var(--mountain);
+  border-radius: 0.25rem;
+  color: white;
 }
 
 .border-header,
@@ -84,10 +79,10 @@ html {
 
 .sun-moon {
   transition: background-color 4s ease-in-out;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   background-color: var(--light);
-  transform: translateX(60%) translateY(100%);
+  transform: translateX(45%) translateY(80%);
 }
 
 .mountain {
@@ -334,6 +329,10 @@ html {
   background-size: 200%;
 }
 
+.home-name {
+  text-shadow: 1px 1px 1px rgb(99, 99, 99);
+}
+
 #cycle span {
   position: absolute;
   width: 100%;
@@ -341,6 +340,7 @@ html {
   white-space: nowrap;
   opacity: 0;
   animation: cycle-titles 20s linear infinite;
+  text-shadow: 1px 1px 1px rgb(97, 97, 97);
 }
 
 #cycle span:nth-child(2) {
@@ -362,6 +362,12 @@ html {
 
   .sun-moon:hover {
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sun-moon {
+    transform: translateX(60%) translateY(100%);
   }
 }
 
