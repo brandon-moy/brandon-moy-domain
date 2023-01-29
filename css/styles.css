@@ -1,14 +1,11 @@
 :root {
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
   --gradient:
     linear-gradient(
       to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
+      var(--sky),
+      var(--mountain),
+      var(--mountain-shadow),
+      var(--sky)
     );
   --main: #1f303a;
   --text: #fff;
