@@ -366,11 +366,17 @@ html {
   }
 }
 
-/* @media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .sun-moon {
-    transform: translateX(60%) translateY(100%);
+    top: 12.5%;
   }
-} */
+}
+
+@media only screen and (min-width: 1280px) {
+  .sun-moon {
+    top: 15%;
+  }
+}
 
 @keyframes cycle-titles {
   0% {
