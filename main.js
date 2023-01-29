@@ -8,13 +8,14 @@ let day = true;
 function modeChange() {
   if (day) {
     toggleNav();
-    document.documentElement.style.setProperty('--main', '#B8C7DF');
-    document.documentElement.style.setProperty('--text', '#7f8a96');
+    document.documentElement.style.setProperty('--main', '#B5C9E9');
+    document.documentElement.style.setProperty('--text', '#5A6169');
     document.documentElement.style.setProperty('--sky', '#B7D3F2');
     document.documentElement.style.setProperty('--mountain', '#AFAFDC');
     document.documentElement.style.setProperty('--mountain-shadow', '#8484a8');
     document.documentElement.style.setProperty('--snow', '#ddd');
     document.documentElement.style.setProperty('--snow-shadow', '#ccc');
+    document.documentElement.style.setProperty('--button', '#ddd');
     document.documentElement.style.setProperty('--light', '#ffa');
     day = false;
   } else {
@@ -26,6 +27,7 @@ function modeChange() {
     document.documentElement.style.setProperty('--mountain-shadow', '#304a58');
     document.documentElement.style.setProperty('--snow', '#ccc');
     document.documentElement.style.setProperty('--snow-shadow', '#bbb');
+    document.documentElement.style.setProperty('--button', '#4f7b91');
     document.documentElement.style.setProperty('--light', '#fff');
     day = true;
   }

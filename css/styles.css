@@ -12,6 +12,7 @@
   --sky: #354a4a;
   --mountain: #4f7b91;
   --mountain-shadow: #304a58;
+  --button: #4f7b91;
   --snow: #ccc;
   --snow-shadow: #bbb;
   --light: #fff;
@@ -38,9 +39,9 @@ html {
 
 .bg-button {
   transition: background 4s ease-in-out;
-  background: var(--mountain);
+  background: var(--button);
   border-radius: 0.25rem;
-  color: white;
+  color: var(--text);
 }
 
 .border-header,
