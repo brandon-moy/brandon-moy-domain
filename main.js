@@ -8,7 +8,7 @@ let day = true;
 function modeChange() {
   if (day) {
     toggleNav();
-    document.documentElement.style.setProperty('--main', '#B5C9E9');
+    document.documentElement.style.setProperty('--main', '#B6C5DC');
     document.documentElement.style.setProperty('--text', '#5A6169');
     document.documentElement.style.setProperty('--sky', '#CFDFF1');
     document.documentElement.style.setProperty('--mountain', '#AFAFDC');
