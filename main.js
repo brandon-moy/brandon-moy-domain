@@ -10,7 +10,7 @@ function modeChange() {
     toggleNav();
     document.documentElement.style.setProperty('--main', '#B5C9E9');
     document.documentElement.style.setProperty('--text', '#5A6169');
-    document.documentElement.style.setProperty('--sky', '#B7D3F2');
+    document.documentElement.style.setProperty('--sky', '#CFDFF1');
     document.documentElement.style.setProperty('--mountain', '#AFAFDC');
     document.documentElement.style.setProperty('--mountain-shadow', '#8484a8');
     document.documentElement.style.setProperty('--snow', '#ddd');
