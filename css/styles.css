@@ -80,7 +80,10 @@ html {
   width: 100px;
   height: 100px;
   background-color: var(--light);
-  transform: translateX(45%) translateY(80%);
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  animation: bounce 1s infinite ease-in-out;
 }
 
 .mountain {
@@ -363,11 +366,11 @@ html {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+/* @media only screen and (min-width: 1280px) {
   .sun-moon {
     transform: translateX(60%) translateY(100%);
   }
-}
+} */
 
 @keyframes cycle-titles {
   0% {
@@ -419,32 +422,16 @@ html {
   }
 }
 
-@keyframes daylight {
+@keyframes bounce {
   0% {
-    background-color: #70c4c6;
+    transform: translateY(0);
   }
 
-  25% {
-    background-color: #524b64;
-  }
-
-  40% {
-    background-color: #354a4a;
-  }
-
-  70% {
-    background-color: #354a4a;
-  }
-
-  75% {
-    background-color: #e2b553;
-  }
-
-  90% {
-    background-color: #70c4c6;
+  50% {
+    transform: translateY(5%);
   }
 
   100% {
-    background-color: #70c4c6;
+    transform: translateY(0);
   }
 }
