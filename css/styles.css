@@ -1,19 +1,237 @@
 :root {
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
   --gradient:
     linear-gradient(
       to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
+      var(--sky),
+      var(--mountain),
+      var(--mountain-shadow),
+      var(--sky)
     );
+  --main: #1f303a;
+  --text: #fff;
+  --sky: #354a4a;
+  --mountain: #4f7b91;
+  --mountain-shadow: #304a58;
+  --button: #4f7b91;
+  --snow: #ccc;
+  --snow-shadow: #bbb;
+  --light: #fff;
 }
 
 html {
   overflow-x: hidden;
+}
+
+.bg-main {
+  transition: background-color 4s ease-in-out;
+  background-color: var(--main);
+}
+
+.text-var {
+  transition: color 4s ease-in-out;
+  color: var(--text);
+}
+
+.bg-sky {
+  transition: background-color 4s ease-in-out;
+  background-color: var(--sky);
+}
+
+.bg-button {
+  transition: background 4s ease-in-out;
+  background: var(--button);
+  border-radius: 0.25rem;
+  color: var(--text);
+}
+
+.border-header,
+.border-text,
+.mountain,
+.mountain-1,
+.mountain-2,
+.mountain-3,
+.mountain-4,
+.mountain-shadow,
+.mountain-shadow-1,
+.mountain-shadow-2,
+.mountain-shadow-3,
+.mountain-shadow-4,
+.snow,
+.snow-1,
+.snow-2,
+.snow-3,
+.snow-shadow,
+.snow-shadow-1,
+.snow-shadow-2,
+.snow-shadow-3 {
+  transition: border-bottom 4s ease-in-out;
+}
+
+.border-header {
+  border-bottom: 2px solid var(--text);
+}
+
+.border-text {
+  border: 2px solid var(--text);
+}
+
+.sun-moon {
+  transition: background-color 4s ease-in-out;
+  width: 100px;
+  height: 100px;
+  background-color: var(--light);
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.mountain {
+  left: 120px;
+  border-right: 180px solid transparent;
+  border-bottom: 350px solid var(--mountain);
+  border-left: 180px solid transparent;
+}
+
+.mountain-shadow {
+  left: 300px;
+  border-right: 140px solid transparent;
+  border-bottom: 350px solid var(--mountain-shadow);
+  transform-origin: top right;
+  transform: skewX(18deg);
+}
+
+.mountain-1 {
+  left: 60px;
+  border-right: 130px solid transparent;
+  border-bottom: 150px solid var(--mountain);
+  border-left: 130px solid transparent;
+}
+
+.mountain-shadow-1 {
+  left: 190px;
+  border-right: 100px solid transparent;
+  border-bottom: 150px solid var(--mountain-shadow);
+  transform-origin: top right;
+  transform: skewX(18deg);
+}
+
+.mountain-2 {
+  left: 360px;
+  border-right: 130px solid transparent;
+  border-bottom: 300px solid var(--mountain);
+  border-left: 130px solid transparent;
+}
+
+.mountain-shadow-2 {
+  left: 490px;
+  border-right: 100px solid transparent;
+  border-bottom: 300px solid var(--mountain-shadow);
+  transform-origin: top right;
+  transform: skewX(18deg);
+}
+
+.mountain-3 {
+  left: 600px;
+  border-right: 180px solid transparent;
+  border-bottom: 150px solid var(--mountain);
+  border-left: 180px solid transparent;
+}
+
+.mountain-shadow-3 {
+  left: 780px;
+  border-right: 135px solid transparent;
+  border-bottom: 150px solid var(--mountain-shadow);
+  transform-origin: top right;
+  transform: skewX(18deg);
+}
+
+.mountain-4 {
+  left: 920px;
+  border-right: 180px solid transparent;
+  border-bottom: 350px solid var(--mountain);
+  border-left: 180px solid transparent;
+}
+
+.mountain-shadow-4 {
+  left: 1100px;
+  border-right: 140px solid transparent;
+  border-bottom: 350px solid var(--mountain-shadow);
+  transform-origin: top right;
+  transform: skewX(18deg);
+}
+
+.snow {
+  bottom: -98px;
+  left: -50px;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid var(--snow);
+  border-left: 50px solid transparent;
+}
+
+.snow-shadow {
+  bottom: -87px;
+  border-right: 35px solid transparent;
+  border-bottom: 100px solid var(--snow-shadow);
+  transform-origin: top right;
+  transform: skewY(-18deg);
+}
+
+.snow-jagged {
+  transition: border-top 4s ease-in-out;
+  bottom: -130px;
+  left: -45px;
+  border-top: 40px solid var(--snow);
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+}
+
+.snow-1 {
+  bottom: -98px;
+  left: -85px;
+  border-right: 85px solid transparent;
+  border-bottom: 100px solid var(--snow);
+  border-left: 85px solid transparent;
+}
+
+.snow-shadow-1 {
+  bottom: -80px;
+  border-right: 55px solid transparent;
+  border-bottom: 100px solid var(--snow-shadow);
+  transform-origin: top right;
+  transform: skewY(-18deg);
+}
+
+.snow-2 {
+  bottom: -98px;
+  left: -42.5px;
+  border-right: 42.5px solid transparent;
+  border-bottom: 100px solid var(--snow);
+  border-left: 42.5px solid transparent;
+}
+
+.snow-shadow-2 {
+  bottom: -87.5px;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid var(--snow-shadow);
+  transform-origin: top right;
+  transform: skewY(-18deg);
+}
+
+.snow-3 {
+  bottom: -80px;
+  left: -96px;
+  border-right: 95px solid transparent;
+  border-bottom: 80px solid var(--snow);
+  border-left: 95px solid transparent;
+}
+
+.snow-shadow-3 {
+  bottom: -62.5px;
+  border-right: 55px solid transparent;
+  border-bottom: 80px solid var(--snow-shadow);
+  transform-origin: top right;
+  transform: skewY(-18deg);
 }
 
 .close-navbar-toggler {
@@ -112,6 +330,10 @@ html {
   background-size: 200%;
 }
 
+.home-name {
+  text-shadow: 1px 1px 1px rgb(99, 99, 99);
+}
+
 #cycle span {
   position: absolute;
   width: 100%;
@@ -119,6 +341,7 @@ html {
   white-space: nowrap;
   opacity: 0;
   animation: cycle-titles 20s linear infinite;
+  text-shadow: 1px 1px 1px rgb(97, 97, 97);
 }
 
 #cycle span:nth-child(2) {
@@ -136,6 +359,22 @@ html {
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
+  }
+
+  .sun-moon:hover {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sun-moon {
+    top: 12.5%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sun-moon {
+    top: 15%;
   }
 }
 
@@ -186,5 +425,19 @@ html {
 
   to {
     background-position: -200% center;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
