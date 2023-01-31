@@ -23,25 +23,29 @@ html {
 }
 
 .bg-main {
-  transition: background-color 4s ease-in-out;
   background-color: var(--main);
 }
 
 .text-var {
-  transition: color 4s ease-in-out;
+  transition: color 1s ease-in-out;
   color: var(--text);
 }
 
 .bg-sky {
-  transition: background-color 4s ease-in-out;
   background-color: var(--sky);
 }
 
 .bg-button {
-  transition: background 4s ease-in-out;
-  background: var(--button);
+  background-color: var(--button);
   border-radius: 0.25rem;
   color: var(--text);
+}
+
+.bg-main,
+.bg-sky,
+.bg-button,
+.sun-moon {
+  transition: background-color 1s ease-in-out;
 }
 
 .border-header,
@@ -64,7 +68,7 @@ html {
 .snow-shadow-1,
 .snow-shadow-2,
 .snow-shadow-3 {
-  transition: border-bottom 4s ease-in-out;
+  transition: border-bottom 1s ease-in-out;
 }
 
 .border-header {
@@ -76,11 +80,9 @@ html {
 }
 
 .sun-moon {
-  transition: background-color 4s ease-in-out;
   width: 100px;
   height: 100px;
   background-color: var(--light);
-  position: absolute;
   left: 5%;
   top: 10%;
   animation: bounce 1s infinite ease-in-out;
@@ -178,7 +180,7 @@ html {
 }
 
 .snow-jagged {
-  transition: border-top 4s ease-in-out;
+  transition: border-top 1s ease-in-out;
   bottom: -130px;
   left: -45px;
   border-top: 40px solid var(--snow);
