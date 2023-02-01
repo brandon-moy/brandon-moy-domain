@@ -18,7 +18,8 @@
   --light: #fff;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }
 
