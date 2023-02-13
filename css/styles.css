@@ -359,6 +359,15 @@ body {
   animation-delay: 15s;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.visible {
+  opacity: 1;
+}
+
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
@@ -366,6 +375,12 @@ body {
 
   .sun-moon:hover {
     cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
 

@@ -1,11 +1,10 @@
 const $nav = document.querySelector('nav');
 const $sunMoon = document.querySelector('.sun-moon');
-
-$sunMoon.addEventListener('click', modeChange);
+const hiddenElements = document.querySelectorAll('.hidden');
 
 let day = true;
 
-function modeChange() {
+const modeChange = () => {
   if (day) {
     toggleNav();
     document.documentElement.style.setProperty('--main', '#B6C5DC');
@@ -31,9 +30,22 @@ function modeChange() {
     document.documentElement.style.setProperty('--light', '#fff');
     day = true;
   }
-}
+};
 
-function toggleNav() {
+const toggleNav = () => {
   $nav.classList.toggle('bg-dark');
   $nav.classList.toggle('bg-secondary');
-}
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible');
+    }
+  });
+});
+
+hiddenElements.forEach(el => observer.observe(el));
+$sunMoon.addEventListener('click', modeChange);
