@@ -392,6 +392,10 @@ body {
   .sun-moon {
     top: 12.5%;
   }
+
+  .about:nth-child(1) {
+    transition-delay: 600ms;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -441,6 +445,11 @@ body {
 
   .tool:nth-child(6) {
     transition-delay: 1000ms;
+  }
+
+  .p-rev:nth-child(2),
+  .p-norm:nth-child(1) {
+    transition-delay: 400ms;
   }
 }
 
