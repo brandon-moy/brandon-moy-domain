@@ -1,9 +1,7 @@
 const $nav = document.querySelector('nav');
 const $sunMoon = document.querySelector('.sun-moon');
 const hiddenElements = document.querySelectorAll('.hidden');
-
 let day = true;
-
 const modeChange = () => {
   if (day) {
     toggleNav();
@@ -31,12 +29,10 @@ const modeChange = () => {
     day = true;
   }
 };
-
 const toggleNav = () => {
   $nav.classList.toggle('bg-dark');
   $nav.classList.toggle('bg-secondary');
 };
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -44,6 +40,5 @@ const observer = new IntersectionObserver(entries => {
     }
   });
 });
-
 hiddenElements.forEach(el => observer.observe(el));
 $sunMoon.addEventListener('click', modeChange);
